@@ -11,3 +11,4 @@ cache:
     - node_modules
 notifications:
   email:       false
+after_success: nyc npm test
