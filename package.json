@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon --experimental-modules index.mjs",
-    "test": "mocha --exit --recursive --require reify test"
+    "test": "nyc mocha --exit --recursive --require reify test",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
     "type": "git",
@@ -27,10 +28,12 @@
   },
   "devDependencies": {
     "chai": "^4.2.0",
+    "coveralls": "^3.0.3",
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.17.2",
     "mocha": "^6.1.4",
+    "nyc": "^14.1.0",
     "reify": "0.17.3",
     "supertest": "^4.0.2"
   }
