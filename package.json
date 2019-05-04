@@ -3,9 +3,17 @@
   "version": "1.0.0",
   "description": "Quick Credit is anonline lending platform that provides short term soft loans to individuals.This helps solve problems of financial inclusion as away to alleviate poverty and empower low income earners.",
   "main": "index.js",
+  "nyc": {
+    "require": [
+      "reify"
+    ],
+    "extension": [
+      ".mjs"
+    ]
+  },
   "scripts": {
     "start": "nodemon --experimental-modules index.mjs",
-    "test": "mocha --exit --recursive --require reify test"
+    "test": "nyc mocha"
   },
   "repository": {
     "type": "git",
@@ -31,6 +39,7 @@
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.17.2",
     "mocha": "^6.1.4",
+    "nyc": "^14.1.0",
     "reify": "0.17.3",
     "supertest": "^4.0.2"
   }
