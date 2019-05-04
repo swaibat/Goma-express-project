@@ -1,0 +1,19 @@
+{
+  "name": "quick-credit-restful-api",
+  "version": "v1",
+  "description": "Quick Credit is anonline lending platform that provides short term soft loans to individuals.This helps solve problems of financial inclusion as away to alleviate poverty and empower low income earners.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swaibat/Quick-Credit-restful-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/swaibat/Quick-Credit-restful-api/issues"
+  },
+  "homepage": "https://github.com/swaibat/Quick-Credit-restful-api#readme"
+}
